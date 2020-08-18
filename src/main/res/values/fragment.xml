@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    System Library Package
+    Fragment Styles Definition XML File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
+<resources>
+    <style name="Fragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="Fragment.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="FragmentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="FragmentLayout.Entry">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="FragmentLayout.EntryPrompt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/blank</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="FragmentLayout.Buttons">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="FragmentLayout.ListHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="FragmentLayout.ListRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="FragmentLayout.ListColumn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/x_border_3</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+    </style>
+    <style name="FragmentLayout.ListRecycle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="FragmentLayout.ListRecycleItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/x_border_1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/blank</item>
+    </style>
+</resources>

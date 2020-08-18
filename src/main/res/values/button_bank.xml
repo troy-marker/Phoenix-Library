@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    System Library Package
+    Button Bank Styles Definition XML File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
+<resources>
+    <style name="ButtonBank">
+        <item name="android:layout_width">510dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ButtonBankCol">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ButtonBankCol.Right">
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+    <style name="ButtonBankEditText">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="ButtonBankEditText.Green">
+        <item name="android:background">@color/Phoenix_Lt_Green</item>
+    </style>
+    <style name="ButtonBankEditText.Yellow">
+        <item name="android:background">@color/Phoenix_Lt_Yellow</item>
+    </style>
+    <style name="ButtonBankTextView">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+    </style>
+    <style name="ButtonBankTextView.Blue">
+        <item name="android:background">@drawable/x_border_blue_grey</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+    </style>
+    <style name="ButtonBankTextView.Green">
+        <item name="android:background">@drawable/x_border_green_grey</item>
+    </style>
+    <style name="ButtonBankTextView.Yellow">
+        <item name="android:background">@drawable/x_border_yellow_grey</item>
+    </style>
+    <style name="ButtonBankTextView.Red">
+        <item name="android:background">@drawable/x_border_red_grey</item>
+    </style>
+    <style name="ButtonBankTextView.White">
+        <item name="android:background">@drawable/x_border_white_grey</item>
+    </style>
+    <style name="ButtonBankButton">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingTop">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="ButtonBankButton.Blue">
+        <item name="android:background">@drawable/x_blue_button</item>
+    </style>
+    <style name="ButtonBankButton.Green">
+        <item name="android:background">@drawable/x_green_button</item>
+    </style>
+    <style name="ButtonBankButton.Red">
+        <item name="android:background">@drawable/x_red_button</item>
+    </style>
+    <style name="ButtonBankButton.Yellow">
+        <item name="android:background">@drawable/x_yellow_button</item>
+    </style>
+</resources>

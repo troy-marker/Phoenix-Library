@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    System Library Package
+    String Values XML Definition File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
+<resources>
+    <string name="blank"> </string>
+    <string name="error">ERROR: %1$s</string>
+    <string name="success">SUCCESS: %1$s</string>
+    <string name="close">CLOSE</string>
+    <string name="enter">ENTER</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    System Library Package
+    Dialog Styles Definition XML File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
+<resources>
+    <style name="Dialog">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:background">@color/Phoenix_Black</item>
+
+    </style>
+    <style name="DialogMessage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:background">@drawable/x_border_0</item>
+        <item name="android:fontFamily">@font/okuda</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="DialogMessage.Error">
+        <item name="android:textColor">@color/Phoenix_Lt_Red</item>
+    </style>
+    <style name="DialogMessage.Success">
+        <item name="android:textColor">@color/Phoenix_Lt_Green</item>
+    </style>
+    <style name="DialogButton">
+        <item name="android:layout_width">124dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">37dp</item>
+        <item name="android:text"> </item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+        <item name="android:fontFamily">@font/okuda</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="DialogButton.Error">
+        <item name="android:background">@drawable/x_red_button</item>
+    </style>
+    <style name="DialogButton.Success">
+        <item name="android:background">@drawable/x_green_button</item>
+    </style>
+    <style name="DialogButton.Input">
+        <item name="android:background">@drawable/x_blue_button</item>
+    </style>
+    <style name="DialogInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Phoenix_Black</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+    </style>
+    <style name="DialogInput.Title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/okuda</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+    </style>
+    <style name="DialogInput.Entry">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:layout_below">@id/txtPrompt</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_toStartOf">@id/btnEnter</item>
+        <item name="android:background">@drawable/x_border_0</item>
+        <item name="android:fontFamily">@font/okuda</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:text">@string/blank</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+    </style>
+</resources>
