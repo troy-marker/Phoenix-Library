@@ -29,6 +29,7 @@ import java.util.Objects;
 /**
  * The User Content Provider.
  */
+@SuppressWarnings("unused")
 public class ProviderUser extends ContentProvider {
     static final String PROVIDER_NAME ="com.phoenixhosman.launcher.ProviderUser";
     static final String URL = "content://" + PROVIDER_NAME +"/acl";

@@ -31,8 +31,8 @@ import java.util.Objects;
 /**
  * The Settings Content Provider.
  */
+@SuppressWarnings("unused")
 public class ProviderSettings extends ContentProvider {
-
     private static final String PROVIDER_NAME ="com.phoenixhosman.installer.ProviderSettings";
     private static final String URL = "content://" + PROVIDER_NAME +"/settings";
     public static Uri CONTENT_URI = Uri.parse(URL);
