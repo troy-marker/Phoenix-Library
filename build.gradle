@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+    //noinspection GradleCompatible
     compileSdkVersion 28
 
     defaultConfig {

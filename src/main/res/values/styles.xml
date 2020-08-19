@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    Phoenix Hospitality Common Source Code
+    Styles Definition XML File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
+<resources>
+    <style name="Phoenix" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/Phoenix_Black</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+        <item name="android:fontFamily">@font/okuda</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+    </style>
+</resources>
