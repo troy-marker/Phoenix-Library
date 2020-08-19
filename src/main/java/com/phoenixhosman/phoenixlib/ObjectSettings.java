@@ -1,6 +1,6 @@
 /*
     The Phoenix Hospitality Management System
-    Settings Installer App
+    System Library Package
     Setting Object Definition Code File
     Copyright (c) 2020 By Troy Marker Enterprises
     All Rights Under Copyright Reserved

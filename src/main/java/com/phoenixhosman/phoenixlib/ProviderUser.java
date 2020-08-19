@@ -21,38 +21,32 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import java.util.HashMap;
 import java.util.Objects;
 
 /**
- * The Settings Content Provider.
+ * The User Content Provider.
  */
-public class ProviderSettings extends ContentProvider {
-
-    private static final String PROVIDER_NAME ="com.phoenixhosman.installer.ProviderSettings";
-    private static final String URL = "content://" + PROVIDER_NAME +"/settings";
-    public static Uri CONTENT_URI = Uri.parse(URL);
+public class ProviderUser extends ContentProvider {
+    static final String PROVIDER_NAME ="com.phoenixhosman.launcher.ProviderUser";
+    static final String URL = "content://" + PROVIDER_NAME +"/acl";
+    public static final Uri CONTENT_URI = Uri.parse(URL);
     public static String id;
-    public static String coname;
-    public static String coaddress;
-    public static String cocity;
-    public static String costate;
-    public static String cozip;
-    public static String apiurl;
-    public static String lockpass;
-    public static String apikey;
-    private static final int uriCode = 1;
-    private static final UriMatcher uriMatcher;
+    public static String name;
+    public static String grade;
+    public static String gradename;
+    public static String department;
+    public static String departmentname;
+    static final int uriCode = 1;
+    static final UriMatcher uriMatcher;
     private static final HashMap<String, String> values = null;
 
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI(PROVIDER_NAME, "settings", uriCode);
-        uriMatcher.addURI(PROVIDER_NAME, "settings/*", uriCode);
+        uriMatcher.addURI(PROVIDER_NAME, "acl", uriCode);
+        uriMatcher.addURI(PROVIDER_NAME, "acl/*", uriCode);
     }
 
     @Override
@@ -81,7 +75,7 @@ public class ProviderSettings extends ContentProvider {
     @Nullable
     @Override
     public String getType(@NonNull Uri uri) {
-        if (uriMatcher.match(uri) == uriCode) return "vnd.android.cursor/settings";
+        if (uriMatcher.match(uri) == uriCode) return "vnd.android.cursor/acl";
         throw new IllegalArgumentException("Unsupported URI:" + uri);
     }
 
@@ -115,28 +109,27 @@ public class ProviderSettings extends ContentProvider {
     }
 
     private SQLiteDatabase db;
-    private static final String DATABASE_NAME = "Phoenix";
-    private static final String TABLE_NAME = "Settings";
-    private static final int DATABASE_VERSION = 1;
-    private static final String CREATE_DB_TABLE = " CREATE TABLE " + TABLE_NAME
+    static final String DATABASE_NAME = "Phoenix";
+    static final String TABLE_NAME = "CurrentUser";
+    static final int DATABASE_VERSION = 1;
+    static final String CREATE_DB_TABLE = " CREATE TABLE " + TABLE_NAME
             + " (id INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + " coname TEXT NOT NULL, "
-            + " coaddress TEXT NOT NULL, "
-            + " cocity TEXT NOT NULL,"
-            + " costate TEXT NOT NULL,"
-            + " cozip TEXT NOT NULL,"
-            + " apiurl TEXT NOT NULL,"
-            + " lockpass TEXT NOT NULL,"
-            + " apikey TEXT NOT NULL)";
+            + " name TEXT NOT NULL, "
+            + " grade INTEGER NOT NULL, "
+            + " gradename TEXT NOT NULL, "
+            + " department INTEGER NOT NULL, "
+            + " departmentname TEXT NOT NULL);";
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
         DatabaseHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
         }
+
         @Override
         public void onCreate(SQLiteDatabase db) {
             db.execSQL(CREATE_DB_TABLE);
         }
+
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
