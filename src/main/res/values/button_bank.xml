@@ -90,4 +90,35 @@
     <style name="ButtonBankButton.Yellow">
         <item name="android:background">@drawable/x_yellow_button</item>
     </style>
+    <style name="ButtonBankWarning">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:gravity">fill|end</item>
+        <item name="android:justificationMode">inter_word</item>
+    </style>
+    <style name="MenuButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingTop">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="MenuButton.Blue">
+        <item name="android:background">@drawable/x_blue_button</item>
+    </style>
+    <style name="MenuButton.Green">
+        <item name="android:background">@drawable/x_green_button</item>
+    </style>
+    <style name="MenuButton.Red">
+        <item name="android:background">@drawable/x_red_button</item>
+    </style>
+    <style name="MenuButton.Yellow">
+        <item name="android:background">@drawable/x_yellow_button</item>
+    </style>
 </resources>

@@ -28,7 +28,12 @@
         <item name="android:orientation">horizontal</item>
     </style>
     <style name="FragmentLayout.Entry">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="FragmentLayout.EntryVertical">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:orientation">vertical</item>
@@ -36,8 +41,22 @@
     <style name="FragmentLayout.EntryPrompt">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
         <item name="android:text">@string/blank</item>
-        <item name="android:textSize">36sp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="FragmentInputEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/Phoenix_White</item>
+    </style>
+    <style name="FragmentInputEdit.Text">
+        <item name="android:inputType">text</item>
+    </style>
+    <style name="FragmentInputEdit.Password">
+        <item name="android:inputType">textPassword</item>
     </style>
     <style name="FragmentLayout.Buttons">
         <item name="android:layout_width">130dp</item>
@@ -72,5 +91,35 @@
         <item name="android:background">@drawable/x_border_1</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:text">@string/blank</item>
+    </style>
+    <style name="FragmentLayoutButton">
+        <item name="android:layout_width">124dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">35dp</item>
+        <item name="android:text"> </item>
+        <item name="android:textColor">@color/Phoenix_Black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="FragmentLayoutButton.Green">
+        <item name="android:background">@drawable/x_green_button</item>
+    </style>
+    <style name="FragmentLayoutButton.Yellow">
+        <item name="android:background">@drawable/x_yellow_button</item>
+    </style>
+    <style name="FragmentLayoutButton.Blue">
+        <item name="android:background">@drawable/x_blue_button</item>
+    </style>
+    <style name="FragmentLayoutButton.Red">
+        <item name="android:background">@drawable/x_red_button</item>
+    </style>
+    <style name="FragmentLayout.Spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/x_border_2</item>
+        <item name="android:popupBackground">@drawable/x_border_1</item>
+        <item name="android:spinnerMode">dropdown</item>
     </style>
 </resources>

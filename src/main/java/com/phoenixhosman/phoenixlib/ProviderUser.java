@@ -29,17 +29,16 @@ import java.util.Objects;
 /**
  * The User Content Provider.
  */
-@SuppressWarnings("unused")
 public class ProviderUser extends ContentProvider {
     static final String PROVIDER_NAME ="com.phoenixhosman.launcher.ProviderUser";
     static final String URL = "content://" + PROVIDER_NAME +"/acl";
     public static final Uri CONTENT_URI = Uri.parse(URL);
-    public static String id;
-    public static String name;
-    public static String grade;
-    public static String gradename;
-    public static String department;
-    public static String departmentname;
+    public static String id = "id";
+    public static String name = "name";
+    public static String grade = "grade";
+    public static String gradename = "gradename";
+    public static String department = "department";
+    public static String departmentname = "departmentname";
     static final int uriCode = 1;
     static final UriMatcher uriMatcher;
     private static final HashMap<String, String> values = null;

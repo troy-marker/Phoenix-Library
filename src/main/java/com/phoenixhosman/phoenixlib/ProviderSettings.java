@@ -21,30 +21,27 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import java.util.HashMap;
 import java.util.Objects;
 
 /**
  * The Settings Content Provider.
  */
-@SuppressWarnings("unused")
 public class ProviderSettings extends ContentProvider {
     private static final String PROVIDER_NAME ="com.phoenixhosman.installer.ProviderSettings";
     private static final String URL = "content://" + PROVIDER_NAME +"/settings";
     public static Uri CONTENT_URI = Uri.parse(URL);
-    public static String id;
-    public static String coname;
-    public static String coaddress;
-    public static String cocity;
-    public static String costate;
-    public static String cozip;
-    public static String apiurl;
-    public static String lockpass;
-    public static String apikey;
+    public static String id = "id";
+    public static String coname = "coname";
+    public static String coaddress = "coaddress";
+    public static String cocity = "cocity";
+    public static String costate = "costate";
+    public static String cozip = "cozip";
+    public static String apiurl = "apiurl";
+    public static String lockpass = "lockpass";
+    public static String apikey = "apikey";
     private static final int uriCode = 1;
     private static final UriMatcher uriMatcher;
     private static final HashMap<String, String> values = null;
