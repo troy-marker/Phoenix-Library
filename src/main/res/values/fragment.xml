@@ -60,6 +60,9 @@
     <style name="FragmentInputEdit.Password">
         <item name="android:inputType">textPassword</item>
     </style>
+    <style name="FragmentInputEdit.Phone">
+        <item name="android:inputType">phone</item>
+    </style>
     <style name="FragmentLayout.Buttons">
         <item name="android:layout_width">130dp</item>
         <item name="android:layout_height">wrap_content</item>
